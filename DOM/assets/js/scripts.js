@@ -11,17 +11,18 @@ function changeClasses() {
 }
 
 function changeText() {
-	const lightMode = 'Light Mode';
-	const darkMode = 'Dark Mode';
+	const darkMode = 'Tema Escuro';
+	const disable = 'Desativar' ;
+	const enable = 'Ativar' ;
 
 	if (body.classList.contains(darkModeClass)) {
-		button.innerHTML = lightMode;
+		button.innerHTML = disable;
 		h1.innerHTML = darkMode + ' ON';
 		return;
 	}
 
-	button.innerHTML = darkMode;
-	h1.innerHTML = lightMode + ' ON';
+	button.innerHTML = enable;
+	h1.innerHTML = darkMode + ' OFF';
 }
 
 const darkModeClass = 'dark-mode';
