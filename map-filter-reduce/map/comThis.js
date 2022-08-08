@@ -1,17 +1,19 @@
-const orange = {
-	price: 2,
+const fruts = {
+	orange : {
+		price: 2,
+		 	},
+
+	apple : {
+		price: 3,
+			},
 };
 
-const apple = {
-	price: 1.5,
-};
-
-function mapArray() {
-	const array = [1, 2, 3, 4, 5];
-
-	return array.map(function (item) {
-		return item * this.price;
-	}, apple);
+function mapArray(arr, thisArg) {
+	return arr.map((item) => {
+		return item * thisArg.price;
+	});
 }
 
-console.log(mapArray());
+const qtd = [4,5];
+
+console.log(mapArray(qtd, fruts.orange));

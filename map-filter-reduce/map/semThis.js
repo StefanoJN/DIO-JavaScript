@@ -1,5 +1,5 @@
-const array = [1, 2, 3, 4, 5];
+const array = [1, 3, 5, 7, 9];
 
-console.log(array.map((item) => item * 2));
+console.log('Array com funçao map => ', array.map((item) => item + 1));
 
-console.log(array);
+console.log('Array Original => ', array);

@@ -5,5 +5,5 @@ function filtraPares(arr) {
 
 	return filteredArr;
 }
-
-console.log(filtraPares([1, 2, 3, 4]));
+array = [1 , 2, 3, 4];
+console.log(filtraPares(array));

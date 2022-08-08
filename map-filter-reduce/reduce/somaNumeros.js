@@ -1,6 +1,6 @@
 function somaNumeros(arr) {
 	if (!arr || !arr.length) return;
-	const soma = arr.reduce((prev, curr) => prev + curr);
+	const soma = arr.reduce((previo, current) => previo + current);
 
 	return soma;
 }
